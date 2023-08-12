@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Iproduct } from './shared/components/form/module/module';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'product';
+  productsArray: Array<Iproduct>=[]
+
+  onProductopt(data:any){
+   console.log(data)
+   this.productsArray.unshift(data)
+  }
 }

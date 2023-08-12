@@ -1,0 +1,15 @@
+<form>
+    <div class="form-group">
+        <label for="">product name</label>
+        <input type="text" #pname class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">product description</label>
+        <textarea  rows="5" #pdesc class="form-control"></textarea>
+    </div>
+    <div class="text-right">
+        <button class="btn btn-primary mr-2" (click)="onProduct(pname,pdesc)">add product</button>
+        <button class="btn btn-primary" (click)="onCatelog(pname,pdesc)">add catelog</button>
+
+    </div>
+</form>
